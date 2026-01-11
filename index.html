@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Logix | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+
+<header class="header">
+    <div class="logo-area">
+        <img src="logo.png" alt="Nexus Logix Logo">
+    </div>
+
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="paletes.html">Paletes</a>
+    </nav>
+</header>
+
+<main>
+    <section class="dashboard">
+        <h2>Ocupação do Armazém</h2>
+        <p>Total de posições: <strong>50 000</strong></p>
+
+        <!-- Gráfico moderno -->
+        <div class="chart-container">
+            <canvas id="ocupacaoChart" width="280" height="280"></canvas>
+            <div class="chart-text">
+                <span id="percentagem"></span>
+                <small>Ocupado</small>
+            </div>
+        </div>
+
+        <!-- Informação textual -->
+        <p class="info">
+            <strong>Ocupado:</strong> <span id="ocupadoText"></span><br>
+            <strong>Livre:</strong> <span id="livreText"></span>
+        </p>
+
+        <a class="btn" href="paletes.html">Reservar Posições</a>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Nexus Logix</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

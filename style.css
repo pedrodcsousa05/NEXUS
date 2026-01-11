@@ -1,0 +1,231 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f4f6f8;
+    color: #1f2933;
+}
+
+/* ================= HEADER ================= */
+.header {
+    background: linear-gradient(90deg, #0a2a43, #0e3a5c);
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-area img {
+    height: 46px;
+}
+
+.logo-area span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ================= MAIN ================= */
+main {
+    padding: 50px 40px;
+    flex: 1;
+}
+
+/* ================= DASHBOARD ================= */
+.dashboard {
+    background: white;
+    padding: 40px;
+    max-width: 650px;
+    margin: auto;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.dashboard h2 {
+    margin-bottom: 10px;
+}
+
+.info {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* ================= GRÁFICO ================= */
+.chart-container {
+    position: relative;
+    width: 280px;
+    margin: 25px auto;
+}
+
+.chart-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-text span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0a2a43;
+}
+
+.chart-text small {
+    color: #6b7280;
+}
+
+/* ================= BOTÕES ================= */
+.btn,
+button {
+    background: #0a2a43;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+.btn:hover,
+button:hover {
+    background: #0e3a5c;
+    transform: translateY(-2px);
+}
+
+/* ================= PALETES ================= */
+.paletes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.palete {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 270px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+
+.palete:hover {
+    transform: translateY(-5px);
+}
+
+.palete h3 {
+    margin-bottom: 10px;
+}
+
+.preco {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* ================= MODAL (ENCOMENDA) ================= */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 320px;
+    margin: 120px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.modal-content h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.modal-content input {
+    padding: 8px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #0a2a43;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 60px;
+}
+
+/* ================= BACKGROUND DASHBOARD ================= */
+body.home {
+    background:
+            linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)),
+            url("fundo.png") center / cover no-repeat fixed;
+}
+
+
+
+/* ================= BANNER PALETES ================= */
+.palete-banner {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 40px;
+}
+
+.palete-banner img {
+    max-width: 700px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+h2 {
+    text-align: center;
+}
+

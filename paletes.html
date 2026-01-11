@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Nexus Logix | Paletes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo-area">
+    <img src="logo.png" alt="Nexus Logix Logo">
+  </div>
+
+  <nav>
+    <a href="index.html">Dashboard</a>
+    <a href="paletes.html">Paletes</a>
+  </nav>
+</header>
+
+
+
+<main>
+  <div class="palete-banner">
+    <img src="palete.png" alt="Paletes no Armazém">
+  </div>
+
+  <h2>Modelos de Paletes</h2>
+
+  <section class="paletes">
+    <div class="palete">
+      <h3>Palete Pequena</h3>
+      <p>Dimensão: <strong>1.2 x 0.8 x 1.20m</strong></p>
+      <p>Carga Máx.: <strong>1500 kg</strong></p>
+      <!---<p class="preco">10€ / mês</p>   -->
+      <button onclick="abrirEncomenda('Pequena')">Reservar Posições</button>
+    </div>
+
+    <div class="palete">
+      <h3>Palete Média</h3>
+      <p>Dimensão: <strong>1.2 x 0.8 x 1.65m</strong></p>
+      <p>Carga Máx.: <strong>1500 kg</strong></p>
+      <!---<p class="preco">15€ / mês</p>  -->
+      <button onclick="abrirEncomenda('Média')">Reservar Posições</button>
+    </div>
+
+    <div class="palete">
+      <h3>Palete Grande</h3>
+      <p>Dimensão: <strong>1.2 x 0.8 x 2.10m</strong></p>
+      <p>Carga Máx.: <strong>1500 kg</strong></p>
+      <!---<p class="preco">20€ / mês</p>  -->
+      <button onclick="abrirEncomenda('Grande')">Reservar Posições</button>
+    </div>
+  </section>
+
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h3>Reservar Posições</h3>
+
+      <label>Tipo de Palete</label>
+      <input type="text" id="tipoPalete" readonly>
+
+      <label>Quantidade</label>
+      <input type="number" id="quantidade" min="1" value="1">
+
+      <button onclick="confirmarEncomenda()">Confirmar</button>
+    </div>
+  </div>
+
+</main>
+<script src="script.js"></script>
+<footer>
+  <p>© 2026 Nexus Logix</p>
+</footer>
+
+</body>
+</html>
