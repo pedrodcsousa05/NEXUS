@@ -1,7 +1,7 @@
 // ================= DADOS =================
 const total = 50000;
 // Ler valores guardados ou usar default
-let ocupado = Number(localStorage.getItem("ocupado")) || 32000;
+let ocupado = Number(localStorage.getItem("ocupado")) || 10000;
 let livre = total - ocupado;
 
 // ================= DASHBOARD =================
@@ -91,5 +91,6 @@ function fecharEncomenda() {
 
 // Inicialização
 atualizarDashboard();
+
 
 
