@@ -66,7 +66,6 @@ function confirmarEncomenda() {
     const quantidade = Number(document.getElementById("quantidade").value);
 
     if (quantidade <= 0 || quantidade > livre) {
-        alert("Quantidade inválida ou sem espaço disponível.");
         return;
     }
 
@@ -92,4 +91,5 @@ function fecharEncomenda() {
 
 // Inicialização
 atualizarDashboard();
+
 
