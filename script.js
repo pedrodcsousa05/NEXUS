@@ -76,7 +76,7 @@ function confirmarEncomenda() {
     // 👉 GUARDAR NO BROWSER
     localStorage.setItem("ocupado", ocupado);
 
-    alert("Encomenda efetuada com sucesso!");
+    
 
     fecharEncomenda();
 
@@ -92,3 +92,4 @@ function fecharEncomenda() {
 
 // Inicialização
 atualizarDashboard();
+
